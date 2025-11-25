@@ -68,8 +68,7 @@ class Personal(Mail):
                 f"Tag: {self.tag}\n"
                 f"Body: {self._body}\n"
                 f"Flag: {self.flag}\n"
-                f"Read: {self.read}\n"
-                f"{type(self).__name__}")
+                f"Read: {self.read}\n")
 
     # FB.7 display_psnl required method
     def display_psnl(self, mailbox):
@@ -93,3 +92,4 @@ class Personal(Mail):
         sorted_m = sorted(mailbox, key=lambda e: parse_date(e.date), reverse=True)
         for e in sorted_m:
             print(e.show_email())
+
