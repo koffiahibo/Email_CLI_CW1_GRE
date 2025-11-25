@@ -91,5 +91,5 @@ class Mail:
                 f"Tag: {self.tag} \n"
                 f"Body: {self._body} \n"
                 f"Flag: {self.flag} \n"
-                f"Read: {self.read} \n"
-                 f"{type(self).__name__}")
+                f"Read: {self.read} \n")
+
