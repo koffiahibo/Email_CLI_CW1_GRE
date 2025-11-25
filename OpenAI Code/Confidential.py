@@ -70,8 +70,7 @@ class Confidential(Mail):
                 f"Tag: {self.tag}\n"
                 f"Encrypted Body: {self._body}\n"
                 f"Flag: {self.flag}\n"
-                f"Read: {self.read}\n"
-                f"{type(self).__name__}")
+                f"Read: {self.read}\n")
     
     # FA.7 display_conf required method
     def display_conf(self, mailbox):
@@ -85,3 +84,4 @@ class Confidential(Mail):
         sorted_m = sorted(mailbox, key=lambda e: e.frm)
         for e in sorted_m:
             print(e.show_email())
+
